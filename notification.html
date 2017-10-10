@@ -93,7 +93,7 @@ function getCookie(cname) {
 function CheckForNotif() {
     var ie = getCookie("seenIeNotif");
       if (detectIE()) { // If is IE
-        if (ie != "") {
+        if (ie == "") {
               $('#ieNotif').show();
            }
       }
@@ -102,6 +102,7 @@ function CheckForNotif() {
 CheckForNotif();
 
 </script>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
